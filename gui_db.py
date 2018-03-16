@@ -1,10 +1,10 @@
 import sqlite3
 import sys
 import wx
-from wx.lib.mixins.listctrl import CheckListCtrlMizin, ListCtrlAutoWidthMixin
+from wx.lib.mixins.listctrl import CheckListCtrlMixin, ListCtrlAutoWidthMixin
 
 class MainWindow(wx.Frame):
-    def __init__(self, *args, **kwargs)
+    def __init__(self, *args, **kwargs):
         wx.Dialog.__init__(self, None, title="Records", size=(600,400))
         app = wx.App()
         window = wx.Frame(None, title = "", size=(something))
@@ -29,13 +29,12 @@ class MainWindow(wx.Frame):
         '''
         Admission date
         '''
-        self.admiss = (wx.TextCtrl(self, -1, '')
+        self.admiss = wx.TextCtrl(self, -1, '')
         wx.StaticText(self, -1, 'Admission Date')
 
         '''
         Care term
         '''
-        self.term = (wx.TextCtrl(self, -1, '')
+        self.term = wx.TextCtrl(self, -1, '')
         wx.StaticText(self, -1, 'Term of Care')
 
-        wx.Display()
